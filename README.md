@@ -1,8 +1,8 @@
 # Lockset
-![pipeline](https://github.com/optimus-hft/lockset/actions/workflows/go-ci.yml/badge.svg)
-[![codecov](https://codecov.io/gh/optimus-hft/lockset/branch/main/graph/badge.svg)](#)
-[![Go Report Card](https://goreportcard.com/badge/github.com/optimus-hft/lockset)](https://goreportcard.com/report/github.com/optimus-hft/lockset)
-[![Go Reference](https://pkg.go.dev/badge/github.com/optimus-hft/lockset.svg)](https://pkg.go.dev/github.com/optimus-hft/lockset)
+
+## Original repo
+
+`github.com/optimus-hft/lockset`
 
 ## GoLang Dynamic Mutexes
 Lockset provides dynamic mutexes based on lock keys. Each key is locked and unlocked separately and does not affect other keys.
@@ -11,7 +11,7 @@ Instead of protecting everything with a giant mutex, Different parts of code can
 ## Getting Started
 ### Installation
 ```
-go get github.com/optimus-hft/lockset
+go get github.com/ogiusek/lockset
 ```
 
 ### Usage
@@ -19,7 +19,7 @@ go get github.com/optimus-hft/lockset
 ```go
 package cmd
 
-import lockset "github.com/optimus-hft/lockset"
+import lockset "github.com/ogiusek/lockset"
 
 func main() {
 	s := lockset.New()
